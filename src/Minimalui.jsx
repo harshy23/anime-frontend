@@ -224,7 +224,7 @@ export default function Minimalui() {
           className="text-center mt-5"
           style={{ color: typeof message === "string" && message.includes("failed") ? "red" : "green" }}
         >
-          {typeof message === "string" ? message : JSON.stringify(message, null, 2)}
+          {typeof message === "string" ? message : JSON.stringify(message)}
         </pre>
       )}
     </div>
